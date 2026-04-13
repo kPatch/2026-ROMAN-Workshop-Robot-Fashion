@@ -1,0 +1,242 @@
+% RO-MAN 2026 Workshop/Tutorial proposal (draft).
+%
+% This file follows the section order and fields of the official
+% RO-MAN 2026 DOCX template: RO-MAN2026_WT_Proposal20260114.docx
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[letterpaper,top=1in,bottom=0.75in,left=0.75in,right=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=MidnightBlue,urlcolor=MidnightBlue,citecolor=MidnightBlue]{hyperref}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+
+\setlist[itemize]{leftmargin=1.3em,topsep=0.4\baselineskip,itemsep=0.15\baselineskip,parsep=0pt,partopsep=0pt}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\FormField}[2]{#1 & #2\\}
+\newcommand{\FormSection}[1]{\par\vspace{0.75\baselineskip}\noindent\textbf{#1}\par}
+\newcommand{\FormBlockSep}{\par\vspace{0.5\baselineskip}}
+\newcommand{\OrganizerBlock}[7]{%
+  \begingroup
+  \renewcommand{\arraystretch}{1.15}%
+  \begin{tabularx}{\textwidth}{@{}p{0.22\textwidth}@{\hspace{1em}}Y@{}}
+    \FormField{Name:}{#1}
+    \FormField{Affiliation:}{#2}
+    \FormField{Address:}{#3}
+    \FormField{Phone:}{#4}
+    \FormField{Email Address:}{#5}
+    \FormField{Website:}{#6}
+    \FormField{Short Bio:}{#7}
+  \end{tabularx}
+  \endgroup
+}
+\newcommand{\CoOrganizerBlock}[6]{%
+  \begingroup
+  \renewcommand{\arraystretch}{1.15}%
+  \begin{tabularx}{\textwidth}{@{}p{0.22\textwidth}@{\hspace{1em}}Y@{}}
+    \FormField{Name:}{#1}
+    \FormField{Affiliation:}{#2}
+    \FormField{Phone:}{#3}
+    \FormField{Email Address:}{#4}
+    \FormField{Website:}{#5}
+    \FormField{Short Bio:}{#6}
+  \end{tabularx}
+  \endgroup
+}
+
+\newcommand{\TBD}{\textit{TBD}}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{14}{16}\selectfont A Workshop/Tutorial proposal for the\par}
+  {\fontsize{18}{21}\selectfont\bfseries 35th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN 2026)\par}
+  \vspace{0.6em}
+  {\fontsize{12}{14}\selectfont August 24--28, 2026 / Kitakyushu International Conference Center, Kitakyushu, Japan\par}
+\end{center}
+
+\FormSection{Title}
+\textbf{Robot Fashion: Designing Wearable Identities Across Robot Morphologies} (\textbf{RoboFashion})
+
+\FormSection{Format}
+\textbf{Workshop (half day).} Preferred day: \textbf{Monday, August 24, 2026} (alternatively: Thursday, August 28, 2026).
+
+\FormBlockSep
+\textbf{Interdisciplinary leadership.} This workshop is co-led by scholars from Kent State University's \textbf{School of Fashion} (a top U.S.\ fashion program; fashion psychology and apparel design) and the \textbf{Advanced Telerobotics Research Lab} (HRI and social robotics), with additional industry co-organization from PlaiPin.
+
+\FormSection{Main Organiser}
+\OrganizerBlock
+  {Irvin Steve Cardenas}
+  {Advanced Telerobotics Research Lab (Kent State University)}
+  {Kent, Ohio, USA}
+  {+1 330-208-9303}
+  {\href{mailto:icardena@kent.edu}{icardena@kent.edu}}
+  {\url{https://kpatch.github.io/about/}}
+  {Lead author of the HRI~'26 paper \textit{Robot Fashion: The Social Psychology of Robot Clothing} and proposer of the Robot Fashion Psychology Model (RFPM), linking robot attire to trust calibration, role expectations, and touch norms across morphologies. PhD Candidate at Kent State University's Advanced Telerobotics Research Lab, translating fashion-led research-through-design (in-the-wild exemplars and a morphology-diverse capsule collection) into morphology-aware garment guidelines and hands-on workshop activities. Previously a researcher at NASA and led Blockchain Strategy at Goldman Sachs; currently a Research Fellow at Mysten Labs.}
+
+\FormSection{Co-Organisers}
+\CoOrganizerBlock
+  {Jong-Hoon Kim}
+  {Director, Advanced Telerobotics Research Lab (Kent State University)}
+  {+1 330-672-9060}
+  {\href{mailto:jkim72@kent.edu}{jkim72@kent.edu}}
+  {\url{https://www.kent.edu/cs/jong-hoon-kim}}
+  {Senior HRI researcher in telerobotics and social robots and Director of the Advanced Telerobotics Research Lab. Co-author on the RoboFashion research line and experienced organizer of live robot demonstrations and user studies.}
+\FormBlockSep
+\CoOrganizerBlock
+  {Linda Ohrn-McDaniel}
+  {School of Fashion, Kent State University}
+  {+1 330-672-0188}
+  {\href{mailto:lohrn@kent.edu}{lohrn@kent.edu}}
+  {\url{https://www.kent.edu/fashion/profile/linda-ohrn-mcdaniel}}
+  {Fashion scholar at Kent State University's School of Fashion (a top U.S.\ fashion program), bringing apparel design, fit, and garment-construction expertise. Leads the workshop's fashion-led methods for translating theory into hands-on robot wardrobe prototyping and critique.}
+\FormBlockSep
+\CoOrganizerBlock
+  {Krissi R. Riewe Stevenson}
+  {School of Fashion, Kent State University}
+  {+1 330-672-2735}
+  {\href{mailto:kriewe@kent.edu}{kriewe@kent.edu}}
+  {\url{https://www.kent.edu/fashion/krissi-riewe-stevenson}}
+  {Fashion researcher at Kent State University's School of Fashion (a top U.S.\ fashion program). Focuses on the social meaning of dress and fashion psychology mechanisms, supporting the workshop's rigorous bridge from fashion theory to measurable HRI outcomes.}
+\FormBlockSep
+\CoOrganizerBlock
+  {J.R. Campbell}
+  {Design Innovation, Kent State University}
+  {+1 330-672-0192}
+  {\href{mailto:jrcamp@kent.edu}{jrcamp@kent.edu}}
+  {\url{https://orcid.org/0009-0005-1708-7792}}
+  {Design-innovation practitioner supporting research-through-design, rapid prototyping, and critique. Co-developer of morphology-aware garment guidelines and hands-on activities for adapting outfits across robot bodies.}
+\FormBlockSep
+\CoOrganizerBlock
+  {Natalie Yeo}
+  {PlaiPin (Singapore)}
+  {\TBD}
+  {\href{mailto:natalie@plaipin.com}{natalie@plaipin.com}}
+  {\TBD}
+  {Industry practitioner in social robotics and embodied product design. Brings perspectives from designing modular physical AI companions and dressing robots for public-facing deployments and demonstrations.}
+
+\FormSection{Previous Editions}
+This workshop has \textbf{no prior RO-MAN editions}. It is a new offering for RO-MAN 2026, grounded in peer-reviewed HRI scholarship and ongoing practitioner momentum.
+
+\FormBlockSep
+\textbf{Primary grounding paper (fully cited):}\\
+Irvin Steve Cardenas, Jong Hoon Kim, Linda Ohrn-McDaniel, Krissi R. Riewe Stevenson, J.R. Campbell, and Natalie Yeo. 2026. \textit{Robot Fashion: The Social Psychology of Robot Clothing}. In \textit{Proceedings of the 21st ACM/IEEE International Conference on Human-Robot Interaction (HRI '26)}, March 16--19, 2026, Edinburgh, Scotland, UK. ACM, New York, NY, USA, 10 pages. \href{https://doi.org/10.1145/3757279.3788821}{https://doi.org/10.1145/3757279.3788821}
+
+\FormBlockSep
+\textbf{Reviewer note:} This paper will be published at the upcoming HRI~2026 conference; for convenience, an early copy of the full paper is available at \href{https://drive.google.com/file/d/1AIuIYJQ4n4JE4gugdnk1P_0qJRBY-Ale}{https://drive.google.com/file/d/1AIuIYJQ4n4JE4gugdnk1P\_0qJRBY-Ale}.
+
+\FormBlockSep
+In addition, the workshop builds on community precedent in robot clothing and appearance research (e.g., design requirements for robot clothing and RO-MAN studies of clothing-driven first impressions), and on growing momentum toward public showcases, including an upcoming Robot Fashion Show planned for \textbf{September 2026} (New York City).
+
+\FormSection{Statement of Objectives}
+Robots are increasingly deployed in public and social contexts (hospitality, retail, health, entertainment), yet attire remains an afterthought. Clothing is not cosmetic: fashion psychology shows that what an agent wears systematically shapes social cognition, including trust calibration, warmth/competence inference, role expectations, and interaction norms.
+
+The workshop's objectives are to:
+\begin{itemize}
+  \item establish robot fashion as a rigorous HRI topic with clear theoretical mechanisms (RFPM);
+  \item bridge fashion-design expertise with HRI methods and robot engineering constraints;
+  \item teach morphology-aware guidelines for dressing diverse robot bodies (e.g., humanoid, quadruped, tabletop, plushie/pocket companion);
+  \item provide hands-on experience, since garment--morphology constraints and safety considerations are difficult to learn from papers alone; and
+  \item grow a community of practice spanning robotics, fashion, design, and industry.
+\end{itemize}
+
+\FormSection{Intended Audience}
+\begin{itemize}
+  \item HRI researchers studying robot appearance, person perception, and social influence
+  \item Robot designers/engineers working on public-facing deployments
+  \item Fashion/textile researchers exploring non-human bodies and interaction contexts
+  \item Industry practitioners deploying robots (hospitality, retail, events, entertainment)
+\end{itemize}
+
+\textbf{Expected attendees:} 25--40.
+
+\FormSection{List of Speakers}
+\textbf{Speakers/facilitators (organizers):} Irvin Steve Cardenas, Jong-Hoon Kim, Linda Ohrn-McDaniel, Krissi R. Riewe Stevenson, J.R. Campbell, Natalie Yeo.
+
+\textbf{Practitioner perspectives (invited; pending confirmation):} short live or recorded contributions from practitioners who dress robots in the wild (e.g., robot fight clubs, demos, deployments), potentially including Vitaly Bulatov, Nima Zeighami, and John Naulty.
+
+\textbf{Organisation.} This is a workshop/tutorial hybrid (no paper submissions). The agenda alternates short, high-signal talks with an extended, hands-on making session in small groups. Each group is assigned a different robot morphology and applies RFPM and the design guidelines to produce and critique a prototype outfit.
+
+\FormBlockSep
+\textbf{Draft half-day schedule (09:00--13:00):}
+\begingroup
+\renewcommand{\arraystretch}{1.15}%
+\begin{tabularx}{\textwidth}{@{}p{0.14\textwidth}p{0.58\textwidth}Y@{}}
+  \textbf{Time} & \textbf{Session} & \textbf{Speaker(s)}\\
+  \hline
+  09:00--09:20 & Welcome \& why robot fashion matters (RFPM overview; workshop thesis) & Cardenas, Kim\\
+  09:20--09:50 & Fashion theory for robot designers (PIDI taxonomy; dress vs.\ garment vs.\ fashion; psychology mechanisms) & Ohrn-McDaniel, Riewe Stevenson\\
+  09:50--10:20 & Morphology-aware design guidelines (G1--G8) with capsule-collection show-and-tell & Campbell, Yeo\\
+  10:20--10:35 & Break & ---\\
+  10:35--10:55 & Practitioner perspectives (lessons from dressing robots in the wild) & Invited speaker(s) / video contributions\\
+  10:55--12:15 & Hands-on: dress a robot (group making session; materials provided; apply RFPM + guidelines) & All organizers (facilitators)\\
+  12:15--12:45 & Show \& tell + critique (fashion-semiotic + HRI critique; informal ``Best Dressed Robot'' vote) & All\\
+  12:45--13:00 & Call to action: Robot Fashion Show (Sept.\ 2026, NYC) + closing discussion & Cardenas\\
+\end{tabularx}
+\endgroup
+
+\FormSection{List of Topics}
+Human-robot interaction; robot clothing and appearance; fashion psychology; social perception and trust calibration; morphology-aware garment design; smart textiles for robots; robot identity and branding; cultural considerations in robot attire; robot-to-robot signaling.
+
+\FormSection{Plan to Stimulate Participation}
+\begin{itemize}
+  \item The primary draw is hands-on making: participants physically dress robots in small groups.
+  \item Pipeline to a public showcase: participants can optionally submit designs for the September 2026 Robot Fashion Show.
+  \item Cross-promotion through HRI/RO-MAN channels, fashion design networks, and robotics practitioner communities.
+  \item No prior fashion experience required: guidelines, templates, and basic materials are provided.
+  \item Invite industry partners to bring or sponsor robots and wardrobe materials.
+  \item Post-workshop online gallery documenting outcomes and design rationales.
+\end{itemize}
+
+\FormSection{Statement of Inclusion, Diversity and Equity}
+\begin{itemize}
+  \item Materials and tools are provided at no extra cost to reduce participation barriers (enabled by Solana Foundation and PlaiPin Inc.\ support).
+  \item Activities are designed for all skill levels (no prior sewing/fashion experience required).
+  \item Multiple robot morphologies provide diverse entry points and respect different research interests.
+  \item Cultural sensitivity in attire is explicitly taught and practiced (including discussion of norms and potential harms).
+  \item Physical accessibility: table-height activities; seated participation possible.
+  \item If a hybrid format is supported, talks can be livestreamed and remote participants can join critique/discussion.
+  \item Organizer team spans disciplines (robotics, fashion, design, industry) and countries (USA, Singapore).
+\end{itemize}
+
+\FormSection{Workshop Organisation}
+\textbf{Format.} Short invited talks + interactive tutorial + hands-on making session with structured critique.
+
+\textbf{Submissions.} No call for papers; participation is by attendance. Optional preregistration may be used for materials planning and to balance morphology group sizes.
+
+\textbf{Post-workshop.} We will publish a shared design gallery (photos + short design notes) and facilitate follow-on collaboration leading into the September 2026 Robot Fashion Show.
+
+\FormSection{Important Dates}
+\begin{itemize}
+  \item Workshop date: August 24 or August 28, 2026 (preferred: August 24).
+  \item Pre-workshop materials (reading list + guidelines + packing list for hands-on): \TBD (target: July 2026).
+  \item Optional preregistration / interest form: \TBD.
+\end{itemize}
+
+\FormSection{Acknowledgements}
+(if any) This workshop is supported by \textbf{Solana Foundation} and \textbf{PlaiPin Inc.}, with additional in-kind support anticipated from Kent State University (School of Fashion; Advanced Telerobotics Research Lab) for materials, robots, and staffing (details \TBD).
+
+\FormSection{Required In-Room Equipment}
+\begin{itemize}
+  \item Multimedia projector + screen.
+  \item 4--6 demo/work tables for the hands-on session.
+  \item Power strips/outlets for robot charging and operation.
+  \item Standard conference Wi-Fi (no special internet requirements beyond typical connectivity).
+\end{itemize}
+
+\textbf{Robots (organizer-provided; subject to travel feasibility):} humanoid (e.g., Pepper or Unitree G1), quadruped (Unitree Go2), tabletop (KAMI), plushie/pocket companion platform (PlaiPin).
+
+\textbf{Craft supplies (organizer-provided):} fabric swatches, scissors, Velcro, elastic, snaps, pins, tape, and basic sewing kits.
+
+\end{document}
